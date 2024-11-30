@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    background: white;
+    max-width: 900px;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.logo{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    left: auto;
+}
+
+.left {
+    flex: 1;
+}
+
+.fashion-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.right {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #333;
+}
+
+p {
+    margin-bottom: 20px;
+    color: #777;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 10px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.or {
+    text-align: center;
+    margin: 20px 0;
+    color: #aaa;
+}
+
+.social-login {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.social-login.google {
+    background: white;
+    color: #333;
+}
+
+.social-login.apple {
+    background: black;
+    color: white;
+}
+
+.social-login.facebook {
+    background: #3b5998;
+    color: white;
+}
+
+#resetButton {
+    display: none;
+    background-color: #f44336;
+    border-radius: 5px;
+}
+#error-message {
+    color: red;
+    display: none;
+}

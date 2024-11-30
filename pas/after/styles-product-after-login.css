@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    background-color: #ffffff;
+    color: #ffffff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+nav .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.button{
+    position: absolute;
+    right: 0;
+}
+
+.login{
+    border-radius: 5px;
+    margin-right: 10px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.signup{
+    border-radius: 5px;
+    margin-right: 10px;
+    padding: 10px 20px;
+    background-color: #ffffff00;
+    color: #000000;
+    border: 2px solid rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.product-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.new-arrival{
+    display: flex;
+    justify-content: center;
+    font-size: 60px;
+    font-family: "Poppins", sans-serif;
+}
+
+.product-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 200px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-card h3 {
+    color: #333;
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.product-card p {
+    color: #666;
+    font-size: 0.9em;
+    margin: 10px 0;
+}
+
+.product-card .product-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product-card button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.product-card button:hover {
+    background-color: #555;
+}
+
+
+footer{
+    background-color: #555;
+    padding: 1px 0;
+    min-height: 100px;
+}
+
+footer ul {
+    max-width: 640px;
+    margin: 2em auto;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+footer ul li {
+    list-style: none;
+    margin: 0 10px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #000000;
+}
+
+footer ul li img {
+    width: 40px;
+    height: auto;
+}
+
+footer p {
+    font-size: 0.8em;
+}

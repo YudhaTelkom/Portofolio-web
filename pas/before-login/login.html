@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style-login.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="left">
+        <img src="../images/Image gy.png" alt="Fashion Model" class="fashion-image">
+        </div>
+            <div class="logo"><a href="start.html"><img src="../images/logovorax.png" alt="logo" width="50" height="45"></a></div>
+            <div class="right">
+            <h1>Login to Your Account</h1>
+            <form id="loginForm">
+                <input type="email" placeholder="Email Address" id="email">
+                <input type="password" placeholder="Password" id="password">
+                <button class="login-btn" type="submit">Login</button>
+            </form>
+            <p id="error-message">Email atau password salah! Coba lagi ya.</p>
+            <button id="resetButton">Reset Password</button>
+        </div>
+
+        <script>
+            const correctEmail = "user@example.com";
+            const correctPassword = "password123";
+            let attemptCount = 0;
+
+            document.getElementById("loginForm").addEventListener("submit", function(event) {
+                event.preventDefault();
+                
+                const email = document.getElementById("email").value;
+                const password = document.getElementById("password").value;
+                
+                if (email === correctEmail && password === correctPassword) {
+                    window.location.href = "../after/after-login.html";
+                } else {
+                    attemptCount++;
+                    document.getElementById("error-message").style.display = "block";
+                
+                    if (attemptCount >= 3) {
+                        document.getElementById("resetButton").style.display = "block";
+                    }
+                }
+            });
+
+            document.getElementById("resetButton").addEventListener("click", function() {
+                alert("Silakan hubungi admin untuk mereset password Anda.");
+            });
+        </script>
+    </div>
+</body>
+</html>
